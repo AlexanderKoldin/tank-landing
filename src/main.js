@@ -1,1 +1,2 @@
-import './styles/main.scss'
+import '@fontsource-variable/nunito-sans';
+import './styles/main.scss';
