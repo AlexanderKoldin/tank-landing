@@ -21,7 +21,7 @@
 
 .button--primary {
   background-color: var(--color-accent);
-  color: var(--color-surface);
+  color: var(--color-bg);
 
   &:hover {
     background-color: var(--color-accent-hover);
@@ -35,4 +35,10 @@
   &:hover {
     background-color: var(--color-dark-hover);
   }
+}
+
+.button__icon {
+  inline-size: 20px;
+  block-size: 20px;
+  flex-shrink: 0;
 }
