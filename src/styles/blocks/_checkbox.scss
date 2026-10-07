@@ -1,0 +1,20 @@
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+
+  vertical-align: middle;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.checkbox__input {
+  inline-size: 14px;
+  block-size: 14px;
+  margin: 0;
+  flex-shrink: 0;
+  accent-color: var(--color-accent);
+}
+
+.checkbox__label {
+  font-size: 14px;
+}
