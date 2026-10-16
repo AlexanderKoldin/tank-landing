@@ -5,9 +5,48 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>АВТОРУСЬ TANK</title>
+    <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <address class="header__address">
+            <!-- icon: map-pin -->
+            Ярославское шоссе, владение 2 В, строение 3 (МКАД, 95 км)
+          </address>
+
+          <div class="header__actions">
+            <button class="header__action" type="button">
+              <!-- icon: settings -->
+              Записаться на сервис
+            </button>
+            <button class="header__action" type="button">
+              <!-- icon: speedometer -->
+              Тест-драйв
+            </button>
+          </div>
+        </div>
+
+        <div class="header__bottom">
+          <a href="/" class="header__logo">
+            <!-- img: логотип -->
+            <span class="header__logo-text">АВТОРУСЬ TANK</span>
+          </a>
+
+          <p class="header__tagline">Официальный дилер</p>
+
+          <div class="header__contacts">
+            <a href="tel:+79999999999" class="header__phone">+7 (999) 999-99-99</a>
+            <p class="header__status">Мы на связи</p>
+          </div>
+
+          <button class="button button--primary button--small header__callback" type="button">
+            <!-- icon: phone-incoming -->
+            Заказать звонок
+          </button>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
