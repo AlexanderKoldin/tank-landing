@@ -115,6 +115,22 @@
       />
     </label>
 
+    <label class="field field--error">
+      <span class="field__label">Телефон</span>
+      <input
+        class="field__input"
+        type="tel"
+        name="phone-error"
+        placeholder="+7 (__) __-__-__"
+        autocomplete="tel"
+        aria-invalid="true"
+        aria-describedby="phone-error"
+      />
+      <span class="field__error" id="phone-error"
+        >Введите корректный номер телефона</span
+      >
+    </label>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

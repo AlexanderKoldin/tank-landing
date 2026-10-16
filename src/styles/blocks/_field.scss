@@ -26,7 +26,21 @@
   color: var(--color-text-muted);
 }
 
-.field:focus-within .field__label,
-.field:has(.field__input:not(:placeholder-shown)) .field__label {
+.field:where(:focus-within, :has(.field__input:not(:placeholder-shown)))
+  .field__label {
   color: var(--color-accent);
+}
+
+.field__error {
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--color-error);
+}
+
+.field--error .field__label {
+  color: var(--color-error);
+}
+
+.field--error .field__input {
+  border-color: var(--color-error);
 }
