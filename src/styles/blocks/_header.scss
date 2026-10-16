@@ -4,6 +4,10 @@
   gap: 32px;
 }
 
+.header__logo {
+  flex-shrink: 0;
+}
+
 .header__content {
   flex-grow: 1;
 }
@@ -111,6 +115,11 @@
   margin-inline-start: 20px;
 }
 
+.header__action,
+.header__phone {
+  transition: color 0.2s;
+}
+
 @keyframes header-pulse {
   50% {
     opacity: 0.3;
@@ -120,5 +129,12 @@
 @media (prefers-reduced-motion: reduce) {
   .header__status::before {
     animation: none;
+  }
+}
+
+@media (hover: hover) {
+  .header__action:hover,
+  .header__phone:hover {
+    color: var(--color-accent);
   }
 }
