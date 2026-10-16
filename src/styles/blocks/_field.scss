@@ -25,3 +25,8 @@
 .field__input::placeholder {
   color: var(--color-text-muted);
 }
+
+.field:focus-within .field__label,
+.field:has(.field__input:not(:placeholder-shown)) .field__label {
+  color: var(--color-accent);
+}
