@@ -10,21 +10,44 @@
   <body>
     <header class="header">
       <div class="container header__inner">
-        <a href="/" class="header__logo"><!-- img: логотип, alt="Авторусь Tank — на главную" --></a>
+        <a href="/" class="header__logo">
+          <img
+            src="/src/assets/images/logo.svg"
+            alt="Авторусь Tank — на главную"
+            width="54"
+            height="70"
+          />
+        </a>
         <div class="header__content">
           <div class="header__top">
             <address class="header__address">
-              <!-- icon: map-pin -->
+              <svg class="header__icon" aria-hidden="true" width="20" height="20">
+                <use href="/sprite.svg#map-pin"></use>
+              </svg>
               Ярославское шоссе, владение 2 В, строение 3 (МКАД, 95 км)
             </address>
 
             <div class="header__actions">
               <button class="header__action" type="button">
-                <!-- icon: settings -->
+                <svg
+                  class="header__icon header__icon--accent"
+                  aria-hidden="true"
+                  width="20"
+                  height="20"
+                >
+                  <use href="/sprite.svg#settings"></use>
+                </svg>
                 Записаться на сервис
               </button>
               <button class="header__action" type="button">
-                <!-- icon: speedometer -->
+                <svg
+                  class="header__icon header__icon--accent"
+                  aria-hidden="true"
+                  width="20"
+                  height="20"
+                >
+                  <use href="/sprite.svg#speedometer"></use>
+                </svg>
                 Тест-драйв
               </button>
             </div>
@@ -40,7 +63,9 @@
             </div>
 
             <button class="button button--primary button--small header__callback" type="button">
-              <!-- icon: phone-incoming -->
+              <svg class="button__icon" aria-hidden="true" width="20" height="20">
+                <use href="/sprite.svg#phone-incoming"></use>
+              </svg>
               Заказать звонок
             </button>
           </div>

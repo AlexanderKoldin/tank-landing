@@ -46,3 +46,18 @@
 .header__contacts {
   margin-inline-start: auto;
 }
+
+.header__address,
+.header__action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__icon {
+  flex-shrink: 0;
+}
+
+.header__icon--accent {
+  color: var(--color-accent);
+}
